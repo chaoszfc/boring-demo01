@@ -1,0 +1,57 @@
+/* 
+* @Author: Marte
+* @Date:   2017-11-27 20:43:12
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-12-25 08:55:56
+*/
+/*公共类*/
+/*版心*/
+body{background:#93C4D3;}
+#main{height: 80px;margin-top: 250px;}
+#main .show{height: 35px;position:relative;}
+#main .show input{width:205px;height:35px;border-radius: 50px;border:1px solid #43b3e7;font-size: 14px;box-shadow: 0 1px 2px 0 #555;padding-left: 30px;outline: none;}
+#main .show .iconfont{position:absolute;border-radius: 50%;width:20px;height: 20px;}
+#main .show .fir{left:10px;top: 10px;color:skyblue;}
+#main .show .sec{right:11px;top: 7px;font-size: 20px;color:orange;}
+#main .many_icon{height: 40px;margin-top: 10px;}
+#main .many_icon ul{display:flex;justify-content: space-between;}
+#main .many_icon li{width:36px;height: 36px;border-radius: 100%;background:#43b3e7;position:relative;box-shadow: 0 1px 1px 0px #555;opacity:0;}
+#main .many_icon li i{font-size: 24px;text-align: center;line-height: 34px;padding-left: 6px;position:absolute;left:0px;top:-1px;color:white;}
+#main .many_icon li:nth-child(3) i {left:-0.5px;top:1px;}
+#main .many_icon li:nth-child(1) i {font-size: 26px;left:-1px;top:-1px;}
+#main .many_icon li:nth-child(4) i {left:0px;top:0px;}
+#main .show input:focus~.many_icon li{
+  animation:ani 2s ease-out infinite;
+}
+.many_icon .one{
+     animation-delay:0.1s !important;
+}
+.many_icon .two{
+     animation-delay:0.2s !important;
+}
+.many_icon .three{
+     animation-delay:0.3s !important;
+}
+.many_icon .four{
+     animation-delay:0.4s !important;
+}
+
+@keyframes ani{
+ 0% {
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+         
